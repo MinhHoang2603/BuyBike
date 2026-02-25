@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BuyBike">
         <activity
+            android:name=".layout.ItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".layout.ProductionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".layout.StartActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/start_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".layout.StartActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_text"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:fontFamily="@font/vt323"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:layout_width="359dp"
+            android:layout_height="388dp"
+            android:src="@drawable/pinarello"
+            android:scaleType="center"
+            android:contentDescription="@string/img_bike"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_pink"
+            android:layout_marginTop="34dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:textSize="26sp"
+            android:text="@string/bike_shop"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/ubuntu_bold"/>
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:text="@string/get_started"
+            android:textSize="27sp"
+            android:background="@drawable/bg_button"
+            app:backgroundTint="@null"
+            android:fontFamily="@font/vt323"
+            android:layout_marginTop="63dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

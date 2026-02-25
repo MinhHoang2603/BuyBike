@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/production_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".layout.ProductionActivity">
+
+    <TextView
+        android:id="@+id/text_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_text"
+        android:textSize="25sp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:layout_marginTop="47dp"
+        android:textColor="@color/red"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/type_container"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_head">
+
+        <Button
+            android:id="@+id/all_item"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="@string/all_text"
+            android:textColor="@color/unselected_text"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_type_button"
+            app:backgroundTint="@null"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/road_bike_item"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="@string/roadbike_text"
+            android:textColor="@color/unselected_text"
+            android:textSize="20sp"
+            android:layout_marginStart="24dp"
+            android:padding="0dp"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_type_button"
+            app:backgroundTint="@null"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/mountain_bike_item"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="@string/mountain_text"
+            android:textColor="@color/unselected_text"
+            android:textSize="20sp"
+            android:layout_marginStart="24dp"
+            android:padding="0dp"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_type_button"
+            app:backgroundTint="@null"
+            style="?android:attr/borderlessButtonStyle"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/product"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/type_container"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

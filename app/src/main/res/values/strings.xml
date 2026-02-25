@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">BuyBike</string>
+    <string name="bike_shop">POWER BIKE\nSHOP</string>
+    <string name="get_started">Get Started</string>
+    <string name="img_bike">Image bike</string>
+    <string name="start_text">A premium online store for\nsporter and their stylish choice</string>
+    <string name="pinarello_bike">Pinarello</string>
+    <string name="dola">$</string>
+    <string name="cost_bike">1800</string>
+    <string name="all_text">All</string>
+    <string name="roadbike_text">Roadbike</string>
+    <string name="mountain_text">Mountain</string>
+    <string name="main_text">The world\'s Best Bike</string>
+    <string name="sale_text">15% OFF |</string>
+    <string name="pinarello_cost">449$</string>
+    <string name="description_text">Description</string>
+    <string name="item_description">It is a very important form of writing as\nwe write almost everything in paragraphs,\nbe it an answer, essay, story, emails, etc.</string>
+    <string name="add_text">Add to card</string>
+    <string name="price_format">%d$</string>
 </resources>
